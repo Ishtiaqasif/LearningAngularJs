@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Angular | Controllers</title>
     <script src="./Angular_JS/angular_v1.7.9.js"></script>
+    <script src="./Scripts/9.js"></script>
 </head>
 <body>
     <div ng-controller="languages">
@@ -17,25 +18,5 @@
 
         <p>You Have Selected: {{myFavLang}}</p>
     </div>
-<script>
-    let app = angular.module('myLangApp',[]);
-    app.controller('languages', $scope => {
-        $scope.myFavLang = 'None';
-
-        $scope.cpp = () => {
-            $scope.myFavLang = 'C++';
-            alert($scope.myFavLang);
-        }
-        $scope.java = () => {
-            $scope.myFavLang = 'JAVA';
-        }
-        $scope.cSharp = () => {
-            $scope.myFavLang = 'C#';
-        }
-        $scope.javaScript = () => {
-            $scope.myFavLang = 'JavaScript';
-        }
-    });
-</script>
 </body>
 </html>
