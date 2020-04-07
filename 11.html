@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Angular | Filter</title>
+    <title>Angular | Ng-Include</title>
     <script src="./Angular_JS/angular_v1.7.9.js"></script>
     <script src="./Scripts/10.js"></script>
 </head>
-<body>
-    Your Name : <input type="text" ng-model="name"><br>
-    Welcome {{' '+ name|currency:"Taka":2}}
+<body ng-app="">
+    <div ng-include="'11_Includes.html'"></div>
 </body>
