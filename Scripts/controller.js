@@ -2,10 +2,10 @@ let app = angular.module('main', ['ngRoute']);
 app.config($routeProvider => {
     $routeProvider
     .when('/',{
-        template: 'Welcome User'
+        templateUrl: 'page.html'
     })
-    .when('/anotherPage',{
-        template: 'This is another Page'
+    .when('/helloUser',{
+        templateUrl: 'user.html'
     })
     .otherwise({
         redirectTo: '/'
