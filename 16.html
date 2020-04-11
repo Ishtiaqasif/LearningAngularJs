@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <i class="fa fa-heart" aria-hidden="true"></i>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Angular | Login App 2</title>
-    <link rel="stylesheet" href="/Assets/bootstrap/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <title>Angular | Http Services</title>
     <script src="./Angular_JS/angular_v1.7.9.js"></script>
     <script src="Angular_JS/ng-route_v1.7.9.js"></script>
-    <script src="/Scripts/loginapp2.js"></script>
+    <script src="./Scripts/httpServices.js"></script>
 </head>
-<body ng-app="login-app">
-    <div class="container">
-        <div class="jumbotron">
-            <div ng-view>
-            </div>
-        </div>
-    </div>
+<body ng-app="http-app">
+    <ul ng-controller="people">
+        <h2>Nama and Income of Tushar's Friend</h2>
+        <li ng-repeat="friend in friends">
+            {{friend.Name +":"+ friend.Income}}
+        </li>
+    </ul>
+    
 </body>
 
     

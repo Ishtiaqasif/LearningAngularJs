@@ -1,0 +1,28 @@
+<div class = "col-md-6" ng-controller="loginController">
+    <h1>Sign Up</h1>
+    <form id="signUp">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" id="name" ng-model="name">
+            <small class="form-text text-muted" id="nameHelp">Your fullname</small>
+        </div>       
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input class="form-control" type="text" id="username" ng-model="username">
+            <small class="form-text text-muted" id="emailHelp">Use 'admin'</small>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" type="password" id="password" ng-model="password">
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input class="form-control" type="password" id="confirmPassword" ng-model="confirmPassword">
+        </div>
+          <div class="form-group">
+            <button class="btn btn-success" type="button" ng-click="signup()"><i class="fa fa-registered" aria-hidden="true"></i>Register</button>
+        </div> 
+        
+    </form>
+    <p>Already Registred ? <a ng-href="login.html">Login!</a></p>
+</div>

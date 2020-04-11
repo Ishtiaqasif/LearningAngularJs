@@ -14,6 +14,9 @@ app.config($routeProvider => {
         },
         templateUrl: 'dashboard.html'
     })
+    .when('/signup',{
+        templateUrl:'signup.html'
+    })
     .otherwise({
         redirectTo: '/'
     });
@@ -27,7 +30,7 @@ app.controller('loginController',($scope, $location, $rootScope) => {
 
         if(username == 'admin' && password == 'admin'){
             $rootScope.loggedIn = true;
-            $location.path('/dashboard');             
+            $location.path('/dashboard');     
         }
         else{
             alert('Authentication Failed');
