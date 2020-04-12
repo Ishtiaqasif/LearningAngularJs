@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Angular | Search Box Advance</title>
     <script src="./Angular_JS/angular_v1.7.9.js"></script>
-    <script src="Angular_JS/ng-route_v1.7.9.js"></script>
     <script src="./Scripts/httpServices2.js"></script>
     <link rel="stylesheet" href="/Assets/bootstrap/bootstrap-4.4.1-dist/css/bootstrap.css">
     
@@ -16,12 +15,12 @@
     <div class="container">
         <h2>ANGULAR JS Search Table<small> (Data Fatched From JSON)</small></h2><br>
         <div class="form-group-md">
-            <label for="searchBox"> Search Keyword</label>
+            <label for="searchBox">Search Keyword</label>
             <input class= "form-control" type="text" ng-model="searchBox" id="searchBox">
         </div><br>
         
         <table ng-controller="men" class="table table-striped"> 
-            <tr>
+            <tr class="">
                 <th>#</th>
                 <th>Name</th>
                 <th>Age</th>
@@ -33,11 +32,17 @@
                 <td>{{x.Name}}</td>
                 <td>{{x.Age}}</td>
                 <td>{{x.Color}}</td>
-                <td style="background-color: {{x.Color}}; font-weight: bold; color: white; ">{{x.Color}}</td>
+                <td id="colorCol" style="background-color: {{x.Color}};">{{x.Color}}</td>
             </tr>
         </table>
     </div>
     
 </body>
+
+<style>
+    #colorCol{
+         font-weight: bold; color: white;
+    }
+</style>
 
     

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular | Data Passing Through $Scope(s)</title>
+    <script src="./Angular_JS/angular_v1.7.9.js"></script>
+</head>
+<body ng-app="">
+    <span>Outer Box</span>
+    <input type="text" ng-model="message.property"><br>
+    <span ng-repeat="x in [1,2,3]">
+        <span>Inner box</span>
+        <input type="text" ng-model="message.property"><br>
+        Inner Scope: {{message.property}}
+        <br>
+    </span>
+    Outer Scope: {{message.property}}
+
+</body>
+
+    
