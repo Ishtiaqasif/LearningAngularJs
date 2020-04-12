@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <i class="fa fa-heart" aria-hidden="true"></i>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Angular | Http Services</title>
+    <title>Angular | Search Box Advance</title>
     <script src="./Angular_JS/angular_v1.7.9.js"></script>
     <script src="Angular_JS/ng-route_v1.7.9.js"></script>
     <script src="./Scripts/httpServices.js"></script>
 </head>
 <body ng-app="http-app">
     <ul ng-controller="people">
-        <h2>Name and Age<small>From Json Data</small></h2>
+        <h2>Name and Age<small> (From Json Data)</small></h2>
         
-        <li ng-repeat="friend in friends">
+        <input type="text" ng-model="searchBox">
+        <li ng-repeat="friend in friends | filter: searchBox">
             {{friend.Name +":"+ friend.Age}}
         </li>
     </ul>

@@ -1,28 +1,28 @@
 {
-    "Name": "Asif Ishtiaq",
-    "Roll": 130109,
-    "Sport": "Football",
-    "Income": 12000,
-    "friends":[
-        {
-            "Name": "Mehedi",
-            "Income": 25000
-        },
-        {
-            "Name": "Nayan",
-            "Income": 20000
-        },
-        {
-            "Name": "Uzzal",
-            "Income": 5000
-        },
-        {
-            "Name": "Rony",
-            "Income": 18000
-        },
-        {
-            "Name": "Sijit",
-            "Income": 15000
-        }
-    ]
+  "Name": "Asif Ishtiaq",
+  "Roll": 130109,
+  "Sport": "Football",
+  "Age": 12,
+  "friends": [
+    {
+      "Name": "Mehedi",
+      "Age": 25
+    },
+    {
+      "Name": "Nayan",
+      "Age": 20
+    },
+    {
+      "Name": "Uzzal",
+      "Age": 5
+    },
+    {
+      "Name": "Rony",
+      "Age": 18
+    },
+    {
+      "Name": "Sijit",
+      "Age": 15
+    }
+  ]
 }
