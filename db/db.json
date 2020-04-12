@@ -6,23 +6,63 @@
   "friends": [
     {
       "Name": "Mehedi",
-      "Age": 25
+      "Age": 25,
+      "Color": "hotpink"
     },
     {
       "Name": "Nayan",
-      "Age": 20
+      "Age": 20,
+      "Color": "Green"
     },
     {
       "Name": "Uzzal",
-      "Age": 5
+      "Age": 5,
+      "Color": "maroon"
     },
     {
       "Name": "Rony",
-      "Age": 18
+      "Age": 18,
+      "Color": "Aqua"
     },
     {
-      "Name": "Sijit",
-      "Age": 15
+      "Name": "Sujit",
+      "Age": 15,
+      "Color": "Orange"
+    },
+    {
+      "Name": "Andrew",
+      "Age": 55,
+      "Color": "Orangered"
+    },
+    {
+      "Name": "Aron",
+      "Age": 25,
+      "Color": "lightblue"
+    },
+    {
+      "Name": "Joshep",
+      "Age": 20,
+      "Color": "Indigo"
+    },
+    {
+      "Name": "Jacob",
+      "Age": 5,
+      "Color": "lime"
+    },
+    {
+      "Name": "Rony",
+      "Age": 18,
+      "Color": "steelblue"
+    },
+    {
+      "Name": "Sujit",
+      "Age": 15,
+      "Color": "Teal"
+    },
+    {
+      "Name": "Alex",
+      "Age": 55,
+      "Color": "Limegreen"
     }
   ]
 }

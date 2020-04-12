@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fa fa-heart" aria-hidden="tdue"></i>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Angular | Search Box Advance</title>
     <script src="./Angular_JS/angular_v1.7.9.js"></script>
     <script src="Angular_JS/ng-route_v1.7.9.js"></script>
-    <script src="./Scripts/httpServices.js"></script>
+    <script src="./Scripts/httpServices2.js"></script>
+    <link rel="stylesheet" href="/Assets/bootstrap/bootstrap-4.4.1-dist/css/bootstrap.css">
+    
 </head>
-<body ng-app="http-app">
-    <ul ng-controller="people">
-        <h2>Name and Age<small> (From Json Data)</small></h2>
+<body ng-app="http-app2">
+    <div class="container">
+        <h2>ANGULAR JS Search Table<small> (Data Fatched From JSON)</small></h2><br>
+        <div class="form-group-md">
+            <label for="searchBox"> Search Keyword</label>
+            <input class= "form-control" type="text" ng-model="searchBox" id="searchBox">
+        </div><br>
         
-        <input type="text" ng-model="searchBox">
-        <li ng-repeat="friend in friends | filter: searchBox">
-            {{friend.Name +":"+ friend.Age}}
-        </li>
-    </ul>
+        <table ng-controller="men" class="table table-striped"> 
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Color Name</th>
+                <th>Color</th>
+            </tr>  
+            <tr ng-repeat="x in friends | filter: searchBox">
+                <td>{{$index+1}}</td>
+                <td>{{x.Name}}</td>
+                <td>{{x.Age}}</td>
+                <td>{{x.Color}}</td>
+                <td style="background-color: {{x.Color}}; font-weight: bold; color: white; ">{{x.Color}}</td>
+            </tr>
+        </table>
+    </div>
     
 </body>
 
