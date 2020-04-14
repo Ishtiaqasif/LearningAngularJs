@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <i class="fa fa-heart" aria-hidden="true"></i>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Angular | Range Based Loops</title>
+    <title>Angular | $watch</title>
     <script src="./Angular_JS/angular_v1.7.9.js"></script>
-    <script src="./Scripts/range.js"></script>
+    <script src="./Scripts/$watch.js"></script>
 </head>
-<body ng-app="rangeApp">
-    <div ng-controller="rangeCtrl">
-        <li ng-repeat="i in myRange track by $index">
-            {{i}}
-        </li>
+<body ng-app="watch-app" ng-controller="watchCtrlr">
+    <div >
+        <input type="text" ng-model="myText"><br>
+        <br> Updated {{counter}} Times
     </div>
-    
+    <h1 style="color: limegreen;" ng-bind="myText"></h1>
 </body>
 
     
