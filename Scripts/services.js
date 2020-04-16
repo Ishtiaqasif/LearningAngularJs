@@ -6,7 +6,6 @@ app.service('randNumGenerator', function() {
 });
 
 app.controller('servicesCtrlr', ($scope, randNumGenerator) => {
-
     $scope.generateRandom = () =>{
         $scope.randomNumber = randNumGenerator.generate();
     };
