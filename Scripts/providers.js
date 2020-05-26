@@ -1,12 +1,12 @@
 let app = angular.module('providers-app',[]);
 
-app.provider('date', function() {
+app.provider ('date', function() {
     return{
         $get: () => {
             return {
                 showDate: () => {
                     let date = new Date();
-                    return date.getHours();
+                    return date.getTimezoneOffset();
                 }
             }
         }
